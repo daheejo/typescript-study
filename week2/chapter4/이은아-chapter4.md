@@ -2,8 +2,6 @@
 
 ## 4.1 타입 확장 하기
 
----
-
 ### 4.1.1 타입 확장의 장점
 
 - 코드 중복 제거, 명시적인 코드 작성
@@ -83,7 +81,7 @@ function logBaedalInfo(progress: BaedalProgress) {
 }
 ```
 
-### 4.1.3 extends 와 교차 타입
+### 4.1.4 extends 와 교차 타입
 
 - extends 키워드를 사용해서 교차 타입을 작성할 수 있다.
 - BaseCartItem 은 BaseMenuItem을 확장
@@ -145,8 +143,6 @@ type Filter = {
 ```
 
 ## 4.2 타입 좁히기 - 타입 가드
-
----
 
 - 타입 좁히기는 변수 또는 표현식의 타입 범위를 더 작은 범위로 좁혀나가는 과정을 말한다.
   - 정확하고 명시적인 타입 추론 및 복잡한 타입을 작은 범위로 축소하여 타입 안정성을 높인다.
@@ -213,8 +209,6 @@ const isDestinationCode = (x: string): x is DestinationCode => destinationCodeLi
 ```
 
 ## 4.3 타입 좁히기 - 식별할 수 있는 유니온 (Discriminated Unions)
-
----
 
 - 종종 태그된 유니온 (Tagged Union) 으로도 불린다.
   - 식별할 수 있는 (Discriminated Unions) 유니온은 타입 좁히기에 종종 사용된다.
@@ -296,8 +290,6 @@ type ErrorFeedbackType = TextError | ToastError | AlertError;
     - void, string, number, Error 유닛 타입 적용 X
 
 ## 4.4 Exhaustiveness Checking 으로 정확한 타입 분기 유지하기
-
----
 
 - Exhaustiveness(철저함/완전함) Checking 은 모든 케이스에 대해 철저하게 타입을 검사하는 것이다.
   - 모든 케이스에 대한 타입 분기 처리를 해주지 않았을 때, 컴파일 타임 에러가 발생하게 하는 것.
