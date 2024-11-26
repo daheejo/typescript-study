@@ -43,7 +43,7 @@
 |------|--------|
 | 고경준 | [@kyeongjun](https://github.com/kyeongjun-ko) |
 | 이로움 | [@Roum](https://github.com/roum02) |
-| 태운님 | [@gomteng](https://github.com/gomteng) |
+| 공태윤 | [@gomteng](https://github.com/gomteng) |
 | 조다희 | [@daheejo](https://github.com/daheejo) |
 | 이은아 | [@aeuna](https://github.com/aeuna) |
 
