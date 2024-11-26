@@ -2,8 +2,6 @@
 
 ## 5.1 조건부 타입
 
----
-
 ### 5.1.1 extends 와 제네릭을 활용한 조건부 타입
 
 - T extends U ? X : Y
@@ -45,8 +43,6 @@ type UnpackPromise<T> = T extends Promise<infer K>[] ? K : any;
 
 ## 5.2 템플릿 리터럴 타입 활용하기
 
----
-
 - 템플릿 리터럴 타입은 자바스크립트의 템플릿 리터럴 문법을 사용해 특정 문자열에 대한 타입을 선언할 수 있는 기능이다.
 
 ```tsx
@@ -58,8 +54,6 @@ type HeaderTag = `h${HeadingNumber}`;
   - 유니온 조합의 경우의 수가 너무 많지 않게 적절하게 나누어 타입을 정의하는 것이 좋다.
 
 ## 5.3 커스텀 유틸리티 타입 활용하기
-
----
 
 - 유틸리티 타입을 활용한 커스텀 유틸리티 타입을 제작해서 사용할 수 있다.
 
@@ -233,8 +227,6 @@ function NonNullable<T>(value: T): value is NonNullable<T> {
 
 ## 5.4 불변 객체 타입으로 활용하기
 
----
-
 ```tsx
 const colors = {
   red: '#F45452',
@@ -329,8 +321,6 @@ interface Props {
 참고) [https://inpa.tistory.com/entry/TS-📘-타입스크립트-keyof-typeof-사용법](https://inpa.tistory.com/entry/TS-%F0%9F%93%98-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-keyof-typeof-%EC%82%AC%EC%9A%A9%EB%B2%95)
 
 ## 5.5 Record 원시 타입 키 개선하기
-
----
 
 ### 5.5.1 무한한 키를 집합으로 가지는 Record
 
